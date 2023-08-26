@@ -54,6 +54,7 @@ file_put_contents($file_path,$json_cities);
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+    <hr>
     <?php
     foreach ($arr_cities as $city){
         echo '<table border="1" width="25%"><tr>'."<td>$city</0></td>";
