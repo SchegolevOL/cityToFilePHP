@@ -22,11 +22,11 @@ if (isset($_POST['enter_city']))
     echo '<br/>';
     var_dump(in_array($_POST['enter_city'], $arr_cities));
     echo '<br/>';*/
-    if (!in_array($city, $arr_cities)&&$city!=''){
-
-        $arr_cities[] = $city;
-        /*print_r($arr_cities);
-        echo '<br/>';*/
+    if (!in_array($_POST['enter_city'], $arr_cities)&&$city!=''){
+        print_r($_POST['enter_city']);
+        array_push($arr_cities, $city);
+        print_r($arr_cities);
+        echo '<br/>';
     }
 
 }
@@ -54,9 +54,7 @@ file_put_contents($file_path,$json_cities);
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <hr/>
     <?php
-
     foreach ($arr_cities as $city){
         echo '<table border="1" width="25%"><tr>'."<td>$city</0></td>";
 }
