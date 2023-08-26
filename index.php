@@ -23,10 +23,10 @@ if (isset($_POST['enter_city']))
     var_dump(in_array($_POST['enter_city'], $arr_cities));
     echo '<br/>';*/
     if (!in_array($_POST['enter_city'], $arr_cities)&&$city!=''){
-        print_r($_POST['enter_city']);
-        array_push($arr_cities, $city);
-        print_r($arr_cities);
-        echo '<br/>';
+        //print_r($_POST['enter_city']);
+        $arr_cities[] = $city;
+        /*print_r($arr_cities);
+        echo '<br/>';*/
     }
 
 }
