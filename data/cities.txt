@@ -1,1 +1,1 @@
-["Yekaterinburg","Moscow","Sochi","Rim","Voroneg"]
+["Yekaterinburg","Moscow","Sochi","Rim","Voroneg","London"]
